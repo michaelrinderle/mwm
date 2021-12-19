@@ -1,9 +1,11 @@
-﻿# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
-#
-cmake_minimum_required (VERSION 3.8)
+﻿cmake_minimum_required (VERSION 3.8)
+
+IF (WIN32)
+    SET(DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake)
+ELSE ()
+    SET(DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake)
+ENDIF()
 
 project ("mwm")
 
-# Include sub-projects.
-add_subdirectory ("mwm")
+add_subdirectory (src)
