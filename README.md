@@ -1,5 +1,5 @@
 
-+ mwm : michaels's window manager
++ mwm : michael's window manager
 
 mwm is a lightweight windows manager for Windows.
 
