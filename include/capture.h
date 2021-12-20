@@ -19,7 +19,7 @@ class capture {
 public:
     static BOOL capture_key(DWORD vkCode);
     static BOOL compare_key_sym(key_bind key_sequence, key_bind match);
-    static BOOL filter_key_sym(key_bind key_sequence, key_bind bindings[], int count);
+    static BOOL filter_key_sym(key_bind key_sequence, const key_bind bindings[], int count);
 private:
     static key_bind frame;
 };
